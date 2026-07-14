@@ -42,3 +42,7 @@ Python (pandas, numpy), Jupyter, Tableau Public.
 ## Data source
 
 [football-data.co.uk](https://www.football-data.co.uk/englandm.php) — free historical football results and statistics.
+## Author
+
+**Konstantinos Ioannou**
+[GitHub](https://github.com/Iwankon) · [LinkedIn](https://www.linkedin.com/in/konstantinos-ioannou-17430b301/)
