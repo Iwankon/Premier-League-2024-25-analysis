@@ -1,0 +1,45 @@
+import pandas as pd 									Loads the pandas library and gives it the name pd
+
+
+df = pd.read_csv('name.csv')								Creates a Dataframe in pandas from a csv file
+
+
+df.copy()										Creates an independent copy of the Dataframe to be able to make changes (avoids the SettingWithCopyWarning)
+
+
+df.shape										Returns a tuple (rows, columns) with the counts of the two e.g. (150, 20)
+
+
+df.head()										Returns the first 5 rows of the DataFrame .head(10) returns the first 10
+
+
+df.rename(columns={dictionary wiht the shape 'column_name': 'desired name'})		Renames the columns of the Dataframe, careful typos silently pass through and you dont get the renamed column
+
+
+df['column'].value_counts()								It counts how many times each unique value appears in a column.
+
+
+df = pd. concat([df1, df2], ignore_index=True)						Stacks Dataframes on top of each other and with igonre index it renumbers rows continuously
+
+
+df['new_column'] = 'name'									Creates a new column or overwirtes an existing one
+
+
+import numpy as np									Loads the numpy library and gives it the name np
+
+
+df['column'] = np.select(conditions, choices, default='value')				Picks a value based on multiple conditions, checked IN ORDER. conditions and choices are two separate lists that have to be created 1-1. If no conditions are met default value is selected for that row
+
+
+df.groupby('column').agg(								Computes several aggregations, one per line
+	var_name_1=('source_column', 'by what to aggregate'),
+	var_name_2=('source_column', 'by what to aggregate'),
+	.
+	.
+)
+
+
+lambda x: (x == 'value').sum()								Gives True/False per row; the sum() counts the Trues (True=1, False=0)
+
+
+df.sort_values(['column_1', 'column_2'])						Sorts by column 1 values and then by column 2 if column 1 values are equal
