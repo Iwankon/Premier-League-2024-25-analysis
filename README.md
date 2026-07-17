@@ -37,8 +37,6 @@ Python (pandas, numpy), Jupyter, Tableau Public.
 
 ## Dashboard
 
-## Dashboard
-
 Interactive dashboard on Tableau Public: **[View the live dashboard →](https://public.tableau.com/app/profile/konstantinos.ioannou/viz/PremierLeague202425-SeasonAnalysis/01_FinalStandings)**
 
 ## Data source
